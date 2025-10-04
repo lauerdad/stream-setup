@@ -1,1 +1,1 @@
-document.addEventListener('DOMContentLoaded', () => { document.querySelector('.alert').textContent = 'New Follower Alert\!' ; document.querySelector('.alert2').textContent = 'New Donation Alert\!' ; document.querySelector('.alert3').textContent = 'New Subscriber Alert\!' ; });
+document.addEventListener('DOMContentLoaded', () => { const alerts = document.querySelectorAll('.alert, .alert2, .alert3'); alerts.forEach(alert => { alert.style.animation = 'fadeIn 1s ease-in'; }); });
