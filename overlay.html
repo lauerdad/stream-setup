@@ -1,1 +1,44 @@
-<link rel="stylesheet" href="overlay.css"><script src="overlay.js"></script><style>.container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; } .alert { color: #FFFFFF; background: rgba(0, 0, 0, 0.7); padding: 10px; font-family: Arial; animation: fadeIn 1s ease-in; position: absolute; top: 10px; left: 10px; } .alert2 { color: #FFFF00; background: rgba(0, 0, 255, 0.7); padding: 10px; font-family: Arial; position: absolute; bottom: 10px; left: 10px; } .alert3 { color: #00FF00; background: rgba(255, 0, 0, 0.7); padding: 10px; font-family: Arial; position: absolute; bottom: 10px; right: 10px; } .chat-box { color: #FFFFFF; background: rgba(0, 0, 0, 0.5); padding: 10px; font-family: Arial; position: absolute; top: 10px; right: 10px; width: 300px; height: 200px; } .webcam { border: 3px solid #FFFFFF; position: absolute; top: 50px; left: 50px; width: 320px; height: 240px; } .goal-bar { color: #FFFFFF; background: rgba(0, 128, 0, 0.7); padding: 5px; font-family: Arial; position: absolute; top: 80px; left: 10px; } .ticker { color: #FFFFFF; background: rgba(128, 0, 128, 0.7); padding: 5px; font-family: Arial; position: absolute; top: 110px; left: 10px; } .merch-link { color: #FFFFFF; background: rgba(0, 0, 128, 0.7); padding: 5px; font-family: Arial; position: absolute; top: 140px; left: 10px; } .donate-btn { color: #FFFFFF; background: rgba(255, 165, 0, 0.7); padding: 5px; font-family: Arial; position: absolute; top: 170px; left: 10px; } .sub-cta { color: #FFFFFF; background: rgba(0, 255, 255, 0.7); padding: 5px; font-family: Arial; position: absolute; top: 200px; left: 10px; } .top-donor { color: #FFD700; background: rgba(0, 0, 0, 0.8); padding: 8px; font-family: Arial; font-weight: bold; position: absolute; top: 230px; left: 10px; border: 2px solid #FFD700; } .donation-goal { color: #FFFFFF; background: rgba(255, 0, 0, 0.7); padding: 5px; font-family: Arial; position: absolute; top: 260px; left: 10px; } .sub-tier { color: #FFFFFF; background: linear-gradient(to right, rgba(255, 255, 0, 0.7), rgba(255, 165, 0, 0.7)); padding: 5px; font-family: Arial; position: absolute; top: 290px; left: 10px; border: 2px solid #FFFF00; } .donation-event { color: #FFFFFF; background: rgba(255, 0, 0, 0.8); padding: 5px; font-family: Arial; position: absolute; top: 320px; left: 10px; } .poll { color: #FFFFFF; background: rgba(0, 0, 128, 0.8); padding: 8px; font-family: Arial; position: absolute; top: 350px; left: 10px; border: 2px solid #00FFFF; } @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }</style><div class="container"><h1>Stream Overlay</h1><div class="alert">New Follower\!</div><div class="alert2">New Donation\!</div><div class="alert3">New Subscriber\!</div><div class="chat-box">Chat Placeholder</div><div class="webcam">Webcam Placeholder</div><div class="goal-bar">Subscriber Goal: 0/100</div><div class="ticker">Latest Donation: None</div><div class="merch-link">Merch: link.to/merch (click to shop)</div><div class="donate-btn">Donate Now\!</div><div class="sub-cta">Subscribe for exclusive perks\!</div><div class="top-donor">Top Donor: None (/usr/bin/bash)</div><div class="donation-goal">Donation Goal: /usr/bin/bash/00</div><div class="sub-tier">Tier 1 Sub: Emotes | Tier 2: Badges | Tier 3: Shoutouts</div><div class="donation-event">Special Donation Event: 300s left\!</div><div class="poll">Live Poll: What's the next game? Vote now\!</div></div>
+<link rel="stylesheet" href="overlay.css">
+<script src="overlay.js"></script>
+<style>
+.container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.alert { color: #FFFFFF; background: rgba(0, 0, 0, 0.7); padding: 10px; font-family: Arial; animation: fadeIn 1s ease-in; position: absolute; top: 10px; left: 10px; }
+.alert2 { color: #FFFF00; background: rgba(0, 0, 255, 0.7); padding: 10px; font-family: Arial; position: absolute; bottom: 10px; left: 10px; }
+.alert3 { color: #00FF00; background: rgba(255, 0, 0, 0.7); padding: 10px; font-family: Arial; position: absolute; bottom: 10px; right: 10px; }
+.chat-box { color: #FFFFFF; background: rgba(0, 0, 0, 0.5); padding: 10px; font-family: Arial; position: absolute; top: 10px; right: 10px; width: 300px; height: 200px; }
+.webcam { border: 3px solid #FFFFFF; position: absolute; top: 50px; left: 50px; width: 320px; height: 240px; }
+.goal-bar { color: #FFFFFF; background: rgba(0, 128, 0, 0.7); padding: 5px; font-family: Arial; position: absolute; top: 80px; left: 10px; }
+.ticker { color: #FFFFFF; background: rgba(128, 0, 128, 0.7); padding: 5px; font-family: Arial; position: absolute; top: 110px; left: 10px; }
+.merch-link { color: #FFFFFF; background: rgba(0, 0, 128, 0.7); padding: 5px; font-family: Arial; position: absolute; top: 140px; left: 10px; }
+.donate-btn { color: #FFFFFF; background: rgba(255, 165, 0, 0.7); padding: 5px; font-family: Arial; position: absolute; top: 170px; left: 10px; }
+.sub-cta { color: #FFFFFF; background: rgba(0, 255, 255, 0.7); padding: 5px; font-family: Arial; position: absolute; top: 200px; left: 10px; }
+.top-donor { color: #FFD700; background: rgba(0, 0, 0, 0.8); padding: 8px; font-family: Arial; font-weight: bold; position: absolute; top: 230px; left: 10px; border: 2px solid #FFD700; }
+.donation-goal { color: #FFFFFF; background: rgba(255, 0, 0, 0.7); padding: 5px; font-family: Arial; position: absolute; top: 260px; left: 10px; }
+.sub-tier { color: #FFFFFF; background: linear-gradient(to right, rgba(255, 255, 0, 0.7), rgba(255, 165, 0, 0.7)); padding: 5px; font-family: Arial; position: absolute; top: 290px; left: 10px; border: 2px solid #FFFF00; }
+.donation-event { color: #FFFFFF; background: rgba(255, 0, 0, 0.8); padding: 5px; font-family: Arial; position: absolute; top: 320px; left: 10px; }
+.poll { color: #FFFFFF; background: rgba(0, 0, 128, 0.8); padding: 8px; font-family: Arial; position: absolute; top: 350px; left: 10px; border: 2px solid #00FFFF; }
+.winners-circle { color: #FFFFFF; background: rgba(255, 215, 0, 0.8); padding: 8px; font-family: Arial; font-weight: bold; position: absolute; top: 380px; left: 10px; border: 2px solid #FFFFFF; }
+.crypto-alert { color: #FFD700; background: rgba(0, 128, 0, 0.8); padding: 8px; font-family: Arial; font-weight: bold; position: absolute; top: 410px; left: 10px; border: 2px solid #FFD700; animation: pulse 2s infinite; }
+@keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+</style>
+<div class="container">
+<h1>Stream Overlay</h1>
+<div class="alert">New Follower!</div>
+<div class="alert2">New Donation!</div>
+<div class="alert3">New Subscriber!</div>
+<div class="chat-box">Chat Placeholder</div>
+<div class="webcam">Webcam Placeholder</div>
+<div class="goal-bar">Subscriber Goal: 0/100</div>
+<div class="ticker">Latest Donation: None</div>
+<div class="merch-link">Merch: link.to/merch (click to shop)</div>
+<div class="donate-btn">Donate Now!</div>
+<div class="sub-cta">Subscribe for exclusive perks!</div>
+<div class="top-donor">Top Donor: None (/usr/bin/bash)</div>
+<div class="donation-goal">Donation Goal: /usr/bin/bash/00</div>
+<div class="sub-tier">Tier 1 Sub: Emotes | Tier 2: Badges | Tier 3: Shoutouts</div>
+<div class="donation-event">Special Donation Event: 300s left!</div>
+<div class="poll">Live Poll: What's the next game? Vote now!</div>
+<div class="winners-circle">Winner's Circle: Top Supporters!</div>
+<div class="crypto-alert">Big Altcoin Win: 000 Profit!</div>
+</div>
