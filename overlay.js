@@ -57,6 +57,11 @@ document.addEventListener('DOMContentLoaded', () => {
   poll.textContent = 'Live Poll: What\'s the next game? Vote now!';
   poll.style.animation = 'fadeIn 1s ease-in';
   const cryptoAlert = document.querySelector('.crypto-alert');
-  cryptoAlert.textContent = 'Big Altcoin Win: SOL +20%!';
-  cryptoAlert.style.animation = 'fadeIn 1s ease-in';
+  const winMessages = ['Bot Trade: Bought 00 SOL on whale signal!', 'Bot Trade: 0 AIOZ buy detected!', 'Bot Trade: ETH +10% whale pump!'];
+  let j = 0;
+  setInterval(() => {
+    cryptoAlert.textContent = winMessages[j];
+    j = (j + 1) % winMessages.length;
+    cryptoAlert.style.animation = 'fadeIn 1s ease-in';
+  }, 10000);
 });
